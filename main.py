@@ -32,12 +32,6 @@ def main(parameters, hp_search):
 
 	# Split the data
 	(X_train, X_val, X_test, Y_train, Y_val, Y_test) = data_split(scalo_dir=SCALO_DIR)
-	print('X_train: ', X_train)
-	print('X_val: ', X_val)
-	print('X_test: ', X_test)
-	print('Y_train: ', Y_train)
-	print('Y_val: ', Y_val)
-	print('Y_test: ', Y_test)
 
 	# Initialize the hyperparameters search model
 	res_net_instance = ResNet(X_train, scalo_dir=SCALO_DIR)
