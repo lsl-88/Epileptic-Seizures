@@ -2,7 +2,7 @@
 
 ## Overview
 This repository provides the source code for the classification of interictal, preictal, and ictal during an epileptic seizure event in Electroencephalogram (EEG) dataset. This framework first uses a hyperparameter search model to perform random search of wavelet transform hyperparameters. 
-Using the optimal hyperparameters obtained during the random search, the classification task was performed using a full classification model.
+Using the optimal hyperparameters obtained during the random search, the classification task was performed using the full classification model.
 
 ## Getting Started
 ### Installation
@@ -27,8 +27,8 @@ python main.py -rs
 ```
 The log will be save as 'hyperparameters_search_summary.csv'
 
-### Train with specific hyperparameters
-- To train and evaluate the model using specific hyperparamters of the wavelet transform, run the main script with the following settings:
+### Train using specific hyperparameters
+- To train the model using specific hyperparamters of the wavelet transform, run the main script with the following settings:
   - Scales (Number of scales): -s or --scales
   - Scales Resolutions (Resolutions of the scales): -sr or --scales_res
   - Window Size (Length of window in seconds): -ws or --window_size
